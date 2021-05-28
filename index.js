@@ -55,3 +55,11 @@ getA().then(a => {
   }).then(abc => {
     console.log(abc);
   });
+
+// 別解
+(async () => {
+  let a = await getA();
+  let b = await getB();
+  let c = await getC();
+console.log(a * b * c);
+})();
